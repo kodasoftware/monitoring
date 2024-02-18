@@ -1,0 +1,49 @@
+{
+  "name": "@kodasoftware/monitoring",
+  "version": "0.0.0",
+  "description": "A monitoring library for integrating monitoring and observability platforms and generating logs for monitoring",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=16",
+    "vscode": ">=1.22"
+  },
+  "keywords": [
+    "app",
+    "kodasoftware",
+    "monitoring",
+    "pino",
+    "logging"
+  ],
+  "scripts": {
+    "compile": "tsc",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "precompile": "rimraf dist",
+    "prepack": "npm run compile",
+    "prepublish": "npm run compile"
+  },
+  "author": "Koda Software <developer@kodasoftware.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@kodasoftware/typescript": "^0.0.0",
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": ">=7",
+    "@typescript-eslint/parser": ">=7",
+    "eslint": ">=8",
+    "eslint-config-prettier": ">=9",
+    "eslint-plugin-jest": ">=27",
+    "eslint-plugin-node": ">=11",
+    "eslint-plugin-prettier": ">=5",
+    "eslint-plugin-simple-import-sort": ">=12",
+    "prettier": ">=3",
+    "prettier-eslint": ">=16",
+    "typescript": ">=5"
+  },
+  "dependencies": {
+    "pino": "^8.18.0"
+  }
+}
