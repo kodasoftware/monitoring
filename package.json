@@ -1,6 +1,6 @@
 {
   "name": "@kodasoftware/monitoring",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A monitoring library for integrating monitoring and observability platforms and generating logs for monitoring",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -44,6 +44,10 @@
     "typescript": ">=5"
   },
   "dependencies": {
+    "dd-trace": ">=5",
     "pino": "^8.18.0"
+  },
+  "peerDependencies": {
+    "datadog-lambda-js": ">=8"
   }
 }
